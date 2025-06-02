@@ -32,6 +32,7 @@ header {
 }
 h1 {
   justify-self: center;
+  text-align: center;
   font-size: 4rem;
   color: var(--turquoise);
 }
@@ -89,7 +90,7 @@ main {
 }
 
 .bust {
-  width: 300px;
+  width: 20vw;
   border-radius: 50%;
   border: 15px solid var(--blue);
   position: relative;
@@ -97,7 +98,7 @@ main {
 }
 
 .pointing-left {
-  width: 300px;
+  width: 20vw;
   position: relative;
   transform: rotateY(180deg) rotateZ(-20deg);
   animation: pointMotion 2s ease-in-out infinite;
@@ -105,7 +106,7 @@ main {
 
 
 .pointing-right {
-  width: 300px;
+  width: 20vw;
   position: relative;
   transform: rotateZ(-20deg);
   animation: pointMotion2 2s ease-in-out infinite;
@@ -160,6 +161,84 @@ footer {
   
 }
 .gallery-text p {
-  margin: 0 30%;
+  
   text-align: center;
+}
+.social-links {
+  width: 2em;
+  margin: 0 1%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  box-shadow: 0 0 5px white;
+}
+
+@media (max-width: 600px) {
+  .bust {
+    border: 8px solid var(--blue);
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  h2, h3 {
+    font-size: 0.8em;
+  }
+  .gallery-text p {
+    margin: 0;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  .gallery-grid {
+    display: block;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2, h3 {
+    font-size: 0.9em;
+  }
+  .gallery-text p {
+    margin: 0;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 0.8em;
+  }
+    .gallery-grid {
+    display: block;
+  }
+}
+@media (min-width: 801px) and (max-width: 1000px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2, h3 {
+    font-size: 1.2em;
+  }
+  .gallery-text p {
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    font-size: 1em;
+  }
+    .gallery-grid {
+    display: grid;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+  h1 {
+    font-size: 2.6em;
+  }
+  
+  .gallery-text p {
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+    font-size: 1em;
+  }
+    .gallery-grid {
+    display: grid;
+  }
 }
