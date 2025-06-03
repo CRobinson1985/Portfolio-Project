@@ -6,13 +6,10 @@ const loadingBackdrop = document.getElementById('loader-backdrop');
 
 window.addEventListener('DOMContentLoaded', function() {
   this.setTimeout(function() {
-    
     loadingBackdrop.style.display = 'none';
-
   }, 2000)
 
 });
-
 
 bust.addEventListener('click', bustClickHandler);
 
