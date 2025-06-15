@@ -29,7 +29,7 @@ function bustClickHandler() {
   } else {
     bust.src = './assets/pics/Myself.jpg';
     bustChecker = 'Myself';
-    h1.innerText = "Welcome to My Professional Portfolio";
+    h1.innerText = "Welcome to My Portfolio";
     h2.innerText = "Building the future through creativity, technology, and a little fun!";
     hands[0].classList.add('hidden');
     hands[1].classList.add('hidden');
